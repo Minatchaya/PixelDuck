@@ -552,6 +552,7 @@ input[type=text]:focus {
   width: 50%; 
   display: flex;
   gap: 20px;
+  align-items: flex-start;
 }
 .divsub-mid-service_5{
   width: 10vw;

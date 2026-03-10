@@ -209,6 +209,7 @@ input[type=text]:focus {
   .name-detail{
     font-size: 24px;
     color: var(--maincolor);
+    font-family: 'Mohave', sans-serif;
   }
   .div-detail-content{
     display: flex;

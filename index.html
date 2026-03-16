@@ -16,12 +16,13 @@
 
 <body>
     <!-- nice start -->
-    <!-- home page1 - 3 start -->
-     <div style="position: absolute; top: 50px; font-size: 15px; color: red; z-index: 5;"> Versions edit 1.2</div>
-     <div class="homepage overlayto_page01 ">
-        <div class="covertop-home1  fadebgp2">
-            <div class="sub01top-home1" > 
-                    <img src="./img/homepage/page1/asset2.png" class="imgsub01top-home1" >
+    <!-- home page1  - 3 start -->
+     <div style="position: absolute; top: 50px; font-size: 15px; color: red; z-index: 5;"> Versions edit 1.3</div>
+     <div class="homepage overlayto_page01  fadebgp2">
+        <div class="transitionaddon"> </div>
+        <div class="covertop-home1  ">
+            <div class="sub01top-home1 " > 
+                    <img  src="./img/homepage/page1/asset2.png" class="imgsub01top-home1" >
             </div>
         </div>
         <div class="slide-up-box">
@@ -38,7 +39,7 @@
                         $('.sub-01-01botton-home1 ').css('padding-top','30px'), 
                         $('#cover-sub-01botton-home1').css('opacity','0'), 
                         $('#cover-sub-01botton-home1').css('height','0'), 
-                        $('.sub-02botton-home1').css('height','20%'),
+                        $('.sub-02botton-home1').css('height','83px'),
                             
                         $('#cover-sub-01botton-home2').css('opacity','1'), 
                         $('#cover-sub-01botton-home2').css('height','95%'))" 
@@ -50,8 +51,9 @@
                 
                 </div>
                 <div  id="cover-sub-01botton-home2"  class="coverbotton-home3">
-                    <div style="display: flex; flex-direction: column;">
+                    <div style="display: flex; flex-direction: column; height: 100vh;">
                         <div style="display: flex; flex-direction: column;">
+                            <div class="divhide"> &nbsp;</div>
                             <div class="sub03_hd01cardpage3 ">  Separation Anxiety Disorder <br>
                                 โรควิตกกังวลจากการแยกจาก
                             </div>
@@ -3315,22 +3317,33 @@ setTimeout(() => {
 
 
 
-  function openstarthome() {
+function openstarthome() {
+    $('.transitionaddon').css({
+        'animation': 'none', // ล้าง animation ออกเพื่อให้ opacity: 0 ทำงานได้
+        'opacity': 0,
+        'top': 0,
+        'transition': '1s'
+    });
+
     $('.covertop-home1').css({
-        height: '30%',
+        height: '20%',
         transition: '1s'
-    })
+    });
+    
+    $('.imgsub01top-home1').css({
+        opacity: 1,
+    });
 
     $('.coverbotton-home1').css({
-        height: '70%',
+        height: '80%',
         transition: '1s'
-    })
+    });
 
     $('.btustartome').css('display', 'none');
     $('.sub-01botton-home1').css('display', 'block');
     $('.sub-01-01botton-home1').css('opacity', '1');
     $('#logowithbtustat').css('display', 'none');
-};
+}
 
 
 
@@ -3434,6 +3447,10 @@ setTimeout(() => {
                 overlayintro.classList.remove('open');
             }, 5000);
         }
+
+
+
+       
         </script>
     
     

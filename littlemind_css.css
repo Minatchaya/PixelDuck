@@ -6258,7 +6258,16 @@ height: 45px;
 
   /* result end */
   
-
+.box-1-quiz{
+    display: flex;
+    background-color: #E9F9FF;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+}
 
   
 
@@ -6288,6 +6297,7 @@ height: 45px;
   .content_everypottheapslo{
     height: 43vh;
   }
+
 }
 
 @media (max-width: 393px){
@@ -6544,11 +6554,59 @@ height: 45px;
         height: 200px;
         margin-bottom: -21px;
       
-      /* eve end  */
+      
     }
-}
+    .btn-next-page {
+        height: 60px;
+        color: red;
+    }
+    .box-quizpage {
+        display: flex;
+        background-color: #E9F9FF;
+        padding: 12px;
+        border-radius: 10px;
+        font-size: var(--text14);
+        text-align: center;
+        font-weight: 500;
+        flex-direction: column;
+
+    }
+    .box-1-quiz{
+        padding: 12px;
+        font-size: var(--text14);
+    }
+    .choice {
+        font-size: var(--text14);
+        height: 33px;
+        width: 90px;
+
+    }
+    .chap1-pic{
+        height: 60%;
+    }
+    .btn-condition{
+        font-size: 14px;
+    }
+    .chap1-page4-bgcontent {
+        height: 340px;
+        background-color: red;
+    }
+    .chap1-page4-nest{
+        width: 80%;
+    }
+    .chap1-page4{
+        height: calc(100vh - 60px);
+        justify-content: start;
+        padding-top: 20px;
+    }
+
+
+
+
+       /* eve end  */
 
 @media (max-width: 375px){
+   
     /* nice start  */
     /* .sub-02botton-home1{
         background-color: green;

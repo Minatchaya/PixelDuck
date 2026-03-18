@@ -2104,20 +2104,23 @@ height: 45px;
 }
 .chap2page9-2,.chap2page9-3 {
     position: absolute;
-    inset: 0;                /* = top:0 left:0 right:0 bottom:0 */
+    inset: 0;
     width: 100%;
     height: 100%;
-    transform: translateX(100%);
-    transition: transform 1.5s ease;
+    opacity: 0;
+    transition: opacity 0.5s ease;
     z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: opacity 1.1s ease;
+    pointer-events: none;
  
   }
   .chap2page9-2.open,.chap2page9-3.open {
-    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
   }
   .pic-chap1_gray{
     width: 90%;
@@ -2257,20 +2260,23 @@ height: 45px;
 }
 .chap3page9-2,.chap3page9-3 {
     position: absolute;
-    inset: 0;                /* = top:0 left:0 right:0 bottom:0 */
+    inset: 0;
     width: 100%;
     height: 100%;
-    transform: translateX(100%);
-    transition: transform 1.5s ease;
+    opacity: 0;
+    transition: opacity 0.5s ease;
     z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: opacity 1.1s ease;
+    pointer-events: none;
  
   }
   .chap3page9-2.open,.chap3page9-3.open {
-    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
   }
 .coverch3page4{
     display: flex; 
@@ -2788,20 +2794,23 @@ height: 45px;
 }
 .chap4page9-2,.chap4page9-3, .chap4page9-4{
     position: absolute;
-    inset: 0;                /* = top:0 left:0 right:0 bottom:0 */
+    inset: 0;
     width: 100%;
     height: 100%;
-    transform: translateX(100%);
-    transition: transform 1.5s ease;
+    opacity: 0;
+    transition: opacity 0.5s ease;
     z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: opacity 1.1s ease;
+    pointer-events: none;
  
   }
   .chap4page9-2.open,.chap4page9-3.open,.chap4page9-4.open  {
-    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
   }
   .covercallp3{
     display: flex;
@@ -6123,20 +6132,23 @@ height: 45px;
         }
         .chap5page10-2,.chap5page10-3 {
             position: absolute;
-            inset: 0;                /* = top:0 left:0 right:0 bottom:0 */
+            inset: 0;
             width: 100%;
             height: 100%;
-            transform: translateX(100%);
-            transition: transform 1.5s ease;
+            opacity: 0;
+            transition: opacity 0.5s ease;
             z-index: 1;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            transition: opacity 1.1s ease;
+            pointer-events: none;
          
           }
           .chap5page10-2.open,.chap5page10-3.open {
-            transform: translateX(0);
+            opacity: 1;
+            pointer-events: auto;
           }
 
       

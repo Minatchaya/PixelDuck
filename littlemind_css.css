@@ -4888,21 +4888,25 @@ height: 45px;
 }
 .chap1page9-2,.chap1page9-3 {
     position: absolute;
-    inset: 0;                /* = top:0 left:0 right:0 bottom:0 */
+    inset: 0;
     width: 100%;
     height: 100%;
-    transform: translateX(100%);
-    transition: transform 1.5s ease;
+    opacity: 0;
+    transition: opacity 0.5s ease;
     z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
- 
-  }
-  .chap1page9-2.open,.chap1page9-3.open {
-    transform: translateX(0);
-  }
+    transition: opacity 1.1s ease;
+    pointer-events: none;
+}
+
+.chap1page9-2.open,
+.chap1page9-3.open {
+    opacity: 1;
+    pointer-events: auto;
+}
   .nextpage-pic {
     opacity: 0;
     /* transform: translateY(20px); */
@@ -5464,6 +5468,7 @@ height: 45px;
             display: flex;
             align-items: center;
             justify-content: center;
+            background-position: center;
 
         }
     
@@ -6665,7 +6670,7 @@ height: 45px;
 
     }
     .page1-1-nestandegg{
-        height: 40%;
+        height: 35%;
     }
 }
 

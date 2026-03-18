@@ -4727,7 +4727,7 @@ height: 45px;
     width: 100%;
     height: 350px;
     position: relative;
-    background-image: url(./img/chapter1/page6/bg.png);
+    background-image: url(./img/chapter1/page6/birdonflower.png);
     background-repeat: round;
     display: flex;
     justify-content: center;
@@ -6639,7 +6639,8 @@ height: 45px;
     }
     .chap1-page4-bgcontent {
         height: 340px;
-        background-color: red;
+        /* background-color: red; */
+        margin-top: 50px;
     }
     .chap1-page4{
         height: calc(100vh - 60px);

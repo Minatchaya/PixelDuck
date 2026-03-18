@@ -5423,9 +5423,10 @@ height: 45px;
             height: 100%;
             background-repeat: round;
             background-size: contain;
+            background-position-y: 80px;
         }
         .chap1-page1-cloud{
-            background-image: url(./img/chapter1/page1/cloud.png);
+            /* background-image: url(./img/chapter1/page1/cloud.png); */
             width: 100%;
             height: 100%;
             position: absolute;
@@ -5442,7 +5443,7 @@ height: 45px;
             font-size: var(--text16);
             text-align: center;
             position: absolute;
-            top: 100px;
+            top: 50px;
         }
         .chap1-page4-nest{
             width: 100%;
@@ -5451,8 +5452,8 @@ height: 45px;
             /* height: 100%; */
         }
         .chap1-page4-fam{
-            width: 70%;
-            height: 300px;
+            width: 80vw;
+            height: 80vw;    
             margin-bottom: 50px;
         }
     
@@ -6590,9 +6591,9 @@ height: 45px;
         padding: 50px;
     }
     .chap1-page4-fam {
-        width: 60%;
-        height: 200px;
-        margin-bottom: -21px;
+        /* width: 60%;
+        height: 200px; */
+        margin-bottom: 70px;
       
       
     }
@@ -6600,6 +6601,15 @@ height: 45px;
         height: 60px;
         color: red;
     }
+    .footerpage14{
+        height: 60px;
+        color: red;
+    }
+    .footechap1-page3{
+        height: 60px;
+        color: red;
+    }
+
     .box-quizpage {
         display: flex;
         background-color: #E9F9FF;
@@ -6630,9 +6640,6 @@ height: 45px;
     .chap1-page4-bgcontent {
         height: 340px;
         background-color: red;
-    }
-    .chap1-page4-nest{
-        width: 80%;
     }
     .chap1-page4{
         height: calc(100vh - 60px);

@@ -851,7 +851,7 @@
                         <span id="sumquiz"></span>/7
                     </div> 
                     <div>
-                        <img class="page13-sizepic" src="./img/homepage/page13/prince.png">
+                        <img class="page13-sizepic" src="./img/homepage/quiz/prince.png">
                     </div>
                 </div>
                 <div id="answerquizhigh">
@@ -976,7 +976,7 @@
      <!-- homepage map end-->
 
      <!-- chap1 page1 start -->
-     <div onclick="openOverlay('.overlayto_chap1-2')" class="overlay overlayto_chap1-1 overlay-slidedown_overlayto_chap1-1">
+     <div class="overlay overlayto_chap1-1 overlay-slidedown_overlayto_chap1-1">
         <div class="fade-step-page fade-800 chap1-page1-bg">
            <div class="fade-step-page chap1-page1-cloud fade-1000 ">
                 <div  class="fade-step-page txtchap1-page1 fade-2500" >
@@ -984,7 +984,10 @@
                     ก็พบเข้ากับต้นไม้ใหญ่ที่มี<br>
                     <span class="txtpink">รังนกเล็ก ๆ วางอยู่บนต้นไม้</span>
                 </div>
-                <img class="fade-step-page chap1-page4-nest fade-1500" src="./img/chapter1/page1/nest.png">
+                <div  class="fade-step-page chap1-page4-nest fade-1500" style="width: 100%; height: 30%;  background-size: cover; background-image: url(./img/chapter1/page1/egg.png); display: flex; align-items: center; justify-content: center;">
+                    <div onclick="openOverlay('.overlayto_chap1-2')" style="height: 100px; width: 100px; "></div>
+                </div>       
+                <!-- <img class="fade-step-page chap1-page4-nest fade-1500" src="./img/chapter1/page1/egg.png"> -->
                 <img  class="fade-step-page chap1-page4-fam fade-zoom fade-1500" src="./img/chapter1/page1/family.png">
            </div>
         </div>
@@ -2931,7 +2934,7 @@
     
             $('#answerquizhigh img, #answerquizlow img').hide();
     
-            if (total >= 6) {
+            if (total >= 6 && total <= 7) {
                 $('#answerquizhigh img').show();
             } else {
                 $('#answerquizlow img').show();

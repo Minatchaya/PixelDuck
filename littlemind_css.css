@@ -6718,6 +6718,34 @@ height: 45px;
     .chap5-page8-fish3 {
         left: -30px;
     }
+    .chap1-page3 {
+        height: calc(100vh - 60px);
+    }
+    .chap2page1_top {
+        height: 60%;
+    }
+    .chap2page1_bottom {
+        height: 20%;
+    }
+    .coverdivcalepage_all {
+        height: calc(100vh - 60px);
+    }
+    .coverbtutuchtogo {
+        height: 60px;
+        color: red;
+  
+    }
+    .tuchtogonomg {
+        color: red;
+    }
+    .subchp2p4_top1{
+        background-position: top;
+    }
+    .subchp2p4_top2 {
+        height: 45%;
+    }
+
+
 
 }
 

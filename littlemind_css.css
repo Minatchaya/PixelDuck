@@ -4202,7 +4202,7 @@ height: 45px;
     transform: scale(0.2) translateY(20px);
     transition:
       opacity 2.5s ease,
-      transform 1.0s ease;
+      transform 1.5s ease;
   }
   
   .fade-zoom.show {

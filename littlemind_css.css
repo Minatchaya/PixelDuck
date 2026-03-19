@@ -1519,6 +1519,9 @@ body{
     color: var(--textmain);
     font-size: var(--text16);
 }
+.h-pic-prince{
+    height: 370px;
+}
 .imgsub01top-home1{
     width: 75%; 
     object-fit: cover; 
@@ -6540,11 +6543,7 @@ height: 45px;
        .subtop_p3{
         height: 143px;
        }
-       .coverppch2p5{
-        position: absolute;
-        right: 5px;
-        left: -11px;
-       }
+
        .subchp2p6_bottom1{
         left: 78px;
        }
@@ -6729,6 +6728,8 @@ height: 45px;
     }
     .coverdivcalepage_all {
         height: calc(100vh - 60px);
+        justify-content: start;
+        padding-top: 50px;
     }
     .coverbtutuchtogo {
         height: 60px;
@@ -6744,6 +6745,31 @@ height: 45px;
     .subchp2p4_top2 {
         height: 45%;
     }
+    .nextpage-pic{
+        height: 60px;
+        color: red;
+    }
+    .coverch2page05{
+        justify-content: space-between; 
+
+    }
+    .subchp2p5_top1 {
+        margin-top: 50px;
+    }
+    .coverbtutuchtogo2{
+        height: 60px;
+    }
+    .coverppch2p5{
+        position: absolute;
+        right: 5px;
+        left: -11px;
+
+       }
+       .subch2p7_mid1 {
+      
+        height: 430px;
+       }
+  
 
 
 

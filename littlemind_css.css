@@ -2839,6 +2839,10 @@ height: 45px;
     transform: scale(0.4) ;
     transition: 4s;
   }
+  .sizesun{
+    width: 65vw;
+    height: 65vw;
+  }
   .subtop_p3_2{
     font-size: var(--text16);
     color: var(--textmain);
@@ -6340,6 +6344,11 @@ height: 45px;
     text-align: center;
     font-weight: 500;
 }
+.ch4-page6-highfam{
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
 
   
 
@@ -6538,7 +6547,7 @@ height: 45px;
         transform: scale(1) ;
        }
        .submid_p3{
-        height: 255px;
+        height: 240px;
        }
        .subtop_p3{
         height: 143px;
@@ -6769,6 +6778,71 @@ height: 45px;
       
         height: 430px;
        }
+       .subtop_p3_1 {
+        top: -52px;
+       }
+       .subch3p4_top{
+        height: unset;
+       }
+       .subch3p4_mid {
+        position: absolute;
+        bottom: 105px;
+        width: 100%;
+
+    }
+    .subch3p5_top{
+        height: 450px;
+    }
+    .subch3p5_top {
+        align-items: end;
+    }
+    .coverch3page6 {
+        justify-content: unset;
+    }
+    .subchp2p4_top3 {
+        width: 318px;
+        height: 220px;
+    }
+    .sub_ch4p1_mid{
+        height: 290px;
+    }
+    .sub_ch4p1_top{
+        margin-bottom: 10px;
+    }
+    .subch4p4_top{
+        height: unset;
+    }
+    .coverch4page4 {
+        justify-content: unset;
+    }
+    .subch4p5_top1{
+        justify-content: start;
+    }
+    .coverch4page5 {
+        justify-content: start;
+    }
+    .subch4p5_top{
+        height: unset;
+    }
+    .subch4p5_mid4 {
+        height: 100px;
+    }
+    .subch4p5_bot1 {
+        display: flex;
+        width: 100%;
+        height: 38vw;
+    }
+    .coverch4page6{
+        justify-content: start;
+    }
+    .ch4-page6-highfam{
+        height: 39%;
+   
+    }
+
+
+
+
   
 
 
@@ -6845,6 +6919,11 @@ height: 45px;
     .chap5-page8-fish3 {
         left: -50px;
     }
+    .subch3p4_mid{
+
+        bottom: 120px;
+    }
+
 
     /* eve end  */
 }
@@ -6967,6 +7046,7 @@ height: 45px;
     /* nice end  */
 
     /* eve start  */
+
 
     /* eve end  */
 }

@@ -5983,6 +5983,7 @@ height: 45px;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
         }
         .chap5-page5-sizepic{
             width: 85%;
@@ -6684,6 +6685,40 @@ height: 45px;
     .page1-1-nestandegg{
         height: 35%;
     }
+    .chap5-page2-sizeport {
+        width: 96%;
+        height: 400px;
+        top:100px;
+    }
+    .chap5-page2-txt2 {
+        left: 30px;
+        bottom: 80px;
+    }
+    .chap5-page2-txt1{
+        top: 30px;
+    }
+    .chap5-page2-sizehuman {
+        width: 35%;
+        top: 70px;
+    }
+    .chap5-page5-sizepic{
+        width: 80%;
+    }
+    .chap5-page8-bgcontent1{
+        height: 250px;
+
+    }
+    .chap5-page8-bgcontent2 {
+        width: 60%;
+    }
+    .chap5-page8-fish1 {
+        width: 32%;
+
+    }
+    .chap5-page8-fish3 {
+        left: -30px;
+    }
+
 }
 
 
@@ -6750,6 +6785,13 @@ height: 45px;
       .chap1-page6-bgcontent{
         height: 300px;
       }
+      .chap5-page8-bgcontent1{
+        height: 250px;
+    }
+    .chap5-page8-fish3 {
+        left: -50px;
+    }
+
     /* eve end  */
 }
 
@@ -6871,6 +6913,6 @@ height: 45px;
     /* nice end  */
 
     /* eve start  */
-  
+
     /* eve end  */
 }

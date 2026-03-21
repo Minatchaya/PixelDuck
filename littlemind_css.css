@@ -114,6 +114,7 @@ body{
     overflow: hidden;
     width: 100%;
     height: 100vh;
+    /* height: 100dvh; */
     font-family: "Anuphan", sans-serif;
     color: var(--textmain);
 }
@@ -129,7 +130,7 @@ body{
     background-repeat: unset;
     background-size: cover;
     /* background-image: url(./img/homepage/page2/bg.png); */
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
 }
 
 .overlay-slidedown_overlayto_homepage_page2.open {
@@ -178,8 +179,8 @@ body{
     font-weight: var(--w500);
     font-size: var(--text24);
     cursor: pointer;
-    background: linear-gradient(180deg, #E2E2E2 0%, #FEFEFE 100%);
-    
+    /* background: linear-gradient(180deg, #E2E2E2 0%, #FEFEFE 100%); */
+    background-color: red;
     /* ตั้งค่าเริ่มต้นให้หายไปก่อน */
     opacity: 0; 
     
@@ -201,6 +202,7 @@ body{
     width: 100%;
     max-width:440px;
     height: 100vh;
+    /* height: 100dvh; */
     top: 0;
     margin: 0;
     z-index:0;
@@ -1342,7 +1344,8 @@ body{
         transition: transform 0.7s ease-in-out, visibility 0s 0.7s;
     }
 .covertop-home1{
-    width: 100%; height: 59vh;
+    width: 100%; 
+    height: 50vh;
      display: flex;
      align-items: end; 
      justify-content: center;
@@ -1366,7 +1369,7 @@ body{
      align-items: center;
      background-color: var(--bgwhite);
       flex-direction: column;
-
+    border: none;
 }
 .sub-01botton-home1{
     width: 100%; 
@@ -1377,6 +1380,7 @@ body{
     position: relative;
 }
 .sub-02botton-home1{
+    border: none;
     position: absolute;
     width: 100%;
     height: 100px;
@@ -1385,6 +1389,11 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(./img/homepage/page1/asset1.png);
+}
+.sub-02botton-home1_1{
+    height: 21px;
+    background-color: white;
+    border: none;
 }
 .sub-01-01botton-home1{
     font-size:var(--text16);
@@ -1968,9 +1977,20 @@ height: 45px;
     position: relative;
 }
 .coverlogostart_img{
-    width: 50vw; 
-    height: 60vw; 
+    width: 100%;
+    height: 190px;
+    margin-top: auto;   /* ดันตัวเองลงไปข้างล่าง */
+    margin-bottom: auto; /* ดันตัวเองขึ้นมาข้างบน */
+    /* ผลลัพธ์คือจะอยู่กลางหน้าจอพอดี ไม่โดนแถบบังแน่นอน */
+    padding-bottom: 40px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* เปลี่ยนเป็น center เพื่อให้ปุ่มอยู่กลางพื้นที่ */
+    align-items: center;
+    
+    /* เพิ่มระยะกันกระแทกด้านล่าง */
+    padding-bottom: env(safe-area-inset-bottom, 20px);
 }
 .subchp2p4_top1{
     width: 100%;
@@ -2926,7 +2946,7 @@ height: 45px;
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 95vh;
+    height: 97vh;
     background-image: url(./img/homepage/page1/castleopening.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -2946,7 +2966,7 @@ height: 45px;
     text-align: center;
     opacity: 0;
     animation: slideInUp 2s ease-out forwards;
-    
+    background-color: white;
     /* 3s (ตัวแรก) + 4s (ตัวสอง) = 7s */
     animation-delay: 3s; 
 }
@@ -3884,11 +3904,12 @@ height: 45px;
      display: flex;
 }
 .coversizeimghome{
-    width: 100%;height: 124%;
-    object-fit: cover;
-    position: absolute;
-    top: -44px;
-    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* position: absolute;
+    top: -44px; */
+    /* left: 0; */
     transition-duration: 0.5s;
     transition-delay: 1s; 
     z-index: 2;
@@ -3896,6 +3917,292 @@ height: 45px;
 /* .sub-01botton-home1_text01{
     padding-left: 21px;
 } */
+
+/* menu home berger  */
+/* ปุ่ม burger */
+.burger-btnM {
+    font-size: 28px;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1001;
+    left: 0;
+    top: 5vw;
+  }
+  
+  /* overlay */
+  .overlay_mo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0,0,0,0.3); */
+    display: none;
+    z-index: 999;
+  }
+  
+  /* sidebar */
+  .sidebarM {
+    position: fixed;
+    top: 0;
+    left: -1200px;
+    width: calc(70% - 25px);
+    height: 100%;
+    background: white;
+    transition: 0.3s;
+    padding: 0 25px;
+    z-index: 1002;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    background-image: url(./img/homepage/page1/MenuBar_Tab.jpg);
+  }
+  
+  .sidebarM.active {
+    left: 0;
+  }
+  
+  /* menu */
+  .menu-itemM {
+    margin-bottom: 10px;
+  }
+  
+  .menu-headerM {
+    background: #e2e2e2;
+    padding: 6px 15px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: var(--w600);
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .menu-headerM.active {
+    background: linear-gradient(90deg,rgba(78, 177, 214, 1) 0%, rgba(149, 210, 237, 1) 100%);
+    color: white;
+  }
+  
+  /* submenu */
+  .submenuM {
+    display: none;
+    padding: 8px;
+    /* background: #e9f6fb; */
+    border-radius: 10px;
+    margin-top: 5px;
+
+  }
+  .submenuM.active{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./img/homepage/page1/Team_Tab.png);
+  }
+  
+  .submenuM div {
+    padding: 5px 0;
+  }
+  .covericonbeurger{
+    width: 10vw; height: 10vw;
+  }
+  .coverexiticon{
+    width: 100%; 
+     display: flex; 
+     margin: 15px 0;
+     align-items: center;
+     justify-content: space-between;
+  }
+  .boxexiticon_text{
+    font-size: 5vw;
+    width: 56%;
+    color: #95d2ed;
+    text-align: center;
+    font-weight: 600;
+  }
+  .boxexiticon{
+    width: 5vw; height: 5vw
+  }
+  .covericommaharai{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 3vw;
+    /* height: 8vh; */
+    z-index: 5;
+    width: calc(95% - 25px - 3vw);
+  }
+  .sizemaharai{
+    width: 70%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .boxleft_menuitem{
+    width: 15%; 
+    height: 38px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    background-image: url(./img/homepage/page1/Asset72_w.png);
+
+  }
+  .boxleft_menuitem.active{
+    background-image: url(./img/homepage/page1/Asset72_b.png);
+
+  }
+  .boxleft_menuitem2{
+    width: 15%; 
+    height: 38px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(./img/homepage/page1/Asset70.png);
+
+  }
+  .boxleft_menuitem2.active{
+    background-image: url(./img/homepage/page1/Asset70_b.png);
+
+  }
+  .boxleft_menuitem3{
+    width: 15%; 
+    height: 38px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-size: contain;
+    background-image: url(./img/homepage/page1/Asset711_w.png);
+
+  }
+  .boxleft_menuitem3.active{
+    background-image: url(./img/homepage/page1/Asset711_b.png);
+
+  }
+  .boxcenter_menuitem{
+    width: 70%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3.5vw;
+  }
+/* สร้างคลาสสำหรับทำ Mask โดยเฉพาะ */
+.fade-mask {
+    /* ไล่จากสีดำทึบ (เห็นชัด) ไปเป็นโปร่งใส (Fade) */
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+
+    /* ปรับระยะห่างด้านล่างเพื่อให้เห็นเอฟเฟกต์ฟุ้งๆ ชัดขึ้น */
+    padding-bottom: 25px; 
+}
+/* แผ่นใสฟุ้งๆ บังด้านล่าง */
+.bottom-fade-shield {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* ความสูงของระยะที่อยากให้ฟุ้ง */
+    pointer-events: none; /* ทำให้คลิกทะลุไปหาตัวหนังสือได้ */
+    
+    /* ไล่จากสีขาวใส ไปจนถึงสีขาวทึบ (หรือสีเดียวกับพื้นหลัง Submenu ของคุณ) */
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    
+    border-bottom-left-radius: 10px;  /* ให้โค้งมนตามขอบ Submenu */
+    border-bottom-right-radius: 10px;
+    z-index: 5;
+}
+.covercardppl{
+    width: 100%; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding:  unset !important;
+    margin-bottom: 15px;
+}
+.covercardppl_adv{
+    width: 100%; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding:  unset !important;
+}
+.divpplfream {
+    /* 1. ใช้เลขเดียวกันเพื่อให้เป็นจัตุรัสก่อนทำเป็นวงกลม */
+    width: 15vw; 
+    height: 12vw; 
+
+    /* 2. ค่า Min-Max เพื่อไม่ให้รูป "จิ๋ว" ในมือถือ หรือ "ยักษ์" ในจอคอม */
+    min-width: 57px; /* ป้องกันรูปเล็กเกินไปจนมองหน้าคนไม่ชัดในมือถือ */
+    max-width: 100px;  /* ป้องกันรูปใหญ่เกินไปในจอ Desktop ความละเอียดสูง */
+
+    /* 3. ส่วนเสริมที่ต้องมีเพื่อให้เป็นวงกลมเป๊ะ */
+    border: 1.5px solid #95d2ed;
+    border-radius: 50%;
+    overflow: hidden;
+    
+    /* จัดกลาง */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sizeimgppl {
+    width: 100%;
+    height: 100%;
+    /* สำคัญ: เพื่อให้รูปหน้าคนไม่เบี้ยวตอนย่อขยาย */
+    object-fit: cover; 
+    object-position: top;
+    transform: scale(1.4);
+}
+.fontppl{
+    font-size: 3.5vw;
+    font-weight: 600;
+    padding: unset !important;
+}
+.sub_fontppl{
+    font-size: 3vw;
+    font-weight: 400;
+    padding: unset !important;
+}
+.textadv{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.divpplfream_adv {
+    /* 1. ใช้เลขเดียวกันเพื่อให้เป็นจัตุรัสก่อนทำเป็นวงกลม */
+    width: 19vw;
+    height: 11vw;
+    min-width: 41px;/* ป้องกันรูปเล็กเกินไปจนมองหน้าคนไม่ชัดในมือถือ */
+    max-width: 100px;  /* ป้องกันรูปใหญ่เกินไปในจอ Desktop ความละเอียดสูง */
+
+    /* 3. ส่วนเสริมที่ต้องมีเพื่อให้เป็นวงกลมเป๊ะ */
+    border: 1.5px solid #95d2ed;
+    border-radius: 50%;
+    overflow: hidden;
+    
+    /* จัดกลาง */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sizeimgppl_adv {
+    width: 100%;
+    height: 100%;
+    /* สำคัญ: เพื่อให้รูปหน้าคนไม่เบี้ยวตอนย่อขยาย */
+    object-fit: cover; 
+    object-position: center;
+    transform: scale(1.4);
+}
 /* <!-- nice end --> */
 
  /* eve start */
@@ -6369,9 +6676,9 @@ height: 45px;
     justify-content: center;
     background-color: var(--bgiconP3);
   }
-  /* .btustartome{
+  .btustartome{
     background-color: red !important;
-  } */
+  }
   /* .txtpagenomornal{
     background-color: #4CA76D;
   } */
@@ -6393,10 +6700,10 @@ height: 45px;
         padding-top: 16px;
         font-size: 12px;
        }
-       .coversizeimghome{
+       /* .coversizeimghome{
         height: 108%;
         top: 0;
-       }
+       } */
        .sub-02botton-home1{
         top: -65px;
        }
@@ -6408,7 +6715,7 @@ height: 45px;
       .btustartome{
         height: 40px;
         font-size: var(--text16);
-        /* background-color:lightgoldenrodyellow !important; */
+        background-color:rgb(167, 167, 20) !important;
       }
       .sub-01-01botton-home1 {
         padding: 30px 6% 0 6%;
@@ -6862,7 +7169,7 @@ height: 45px;
       } */
       .btustartome {
         width: 29%;
-        /* background-color: rgb(114, 58, 148) !important; */
+        background-color: rgb(114, 58, 148) !important;
       }
       .covertop-home1{
         height: 50%;
@@ -6933,15 +7240,15 @@ height: 45px;
     /* .sub-02botton-home1{
         background-color: #1789da;
       } */
-      /* .btustartome{
+      .btustartome{
         background-color:lightslategrey !important;
-      } */
+      }
       /* .covertop-home1{
         height: 50%;
       } */
-      .coverbotton-home1 {
+      /* .coverbotton-home1 {
         height: calc(100% - 60%)
-      }
+      } */
       /* .txtpagenomornal{
         background-color: #92e751;
       } */

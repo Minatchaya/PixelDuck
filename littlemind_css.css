@@ -189,6 +189,23 @@ body{
     
     animation-delay: 5s; 
 }
+.btustartome2 {
+    /* เปลี่ยนจาก absolute เป็น relative เพื่อให้อยู่ใน flow ของ flex */
+    position: relative; 
+    bottom: 0; 
+    width: 100%; /* ขยายให้กดง่ายขึ้น */
+    height: 50px; /* ปรับให้เท่ากับหน้าแรก */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--w500);
+    font-size: var(--text16);
+    cursor: pointer;
+    color: var(--textmain);
+    opacity: 0;
+    animation: finalFadeInhome 3s ease-in forwards;
+    animation-delay: 1s; /* ลด delay ลงหน่อยเพื่อให้ผู้ใช้ไม่ต้องรอนาน */
+}
 @keyframes finalFadeInhome {
     from {
         opacity: 0;
@@ -338,7 +355,10 @@ body{
     height: 100%;
     top: 0;
     z-index:1;
-    background-color: var(--bgwhite);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./img/homepage/page8/bg12.png);
+    /* background-color: var(--bgwhite); */
 }
 
 .overlay-slidedown_overlayto_page08.open {
@@ -1363,7 +1383,11 @@ body{
 .coverbotton-home1{
     width: 100%; 
     position: relative;
-    height: 55vh;
+    height: auto; /* ยกเลิกการตั้งค่า height ตายตัวแบบ vh */
+    min-height: 55dvh; /* dvh คือความสูงหน้าจอแบบไดนามิก ปรับตามแถบเบราว์เซอร์ */
+    
+    /* เพื่อความปลอดภัย ให้เพิ่ม Padding ล่างไว้หน่อย กันแถบเบราว์เซอร์ทับปุ่ม */
+    padding-bottom: env(safe-area-inset-bottom, 20px);
     /* height: calc(100% - 55%);  */
      display: flex; 
      align-items: center;
@@ -1373,7 +1397,7 @@ body{
 }
 .sub-01botton-home1{
     width: 100%; 
-    height: 100vh; 
+    height: calc(100vh - 279px); 
     display: none;
     flex-direction: column;
     transition: 0.5s;
@@ -1395,11 +1419,17 @@ body{
     background-color: white;
     border: none;
 }
+.sub-02botton-home1_1_1{
+    height: 21px;
+    background-color: white;
+    border: none;
+}
+
 .sub-01-01botton-home1{
     font-size:var(--text16);
     text-indent: 42px;
     text-align: left;
-    padding: 100px 6% 0 6%; 
+    padding: 0 6% 0 6%; 
     color: var(--textmain);
     transition: 2s;
     opacity: 0;
@@ -1417,8 +1447,16 @@ body{
     font-size:var(--text16);
     color: var(--textmain);
    text-align: center;
-    padding-top: 178px;
-    padding-right: 28px; 
+   display: flex;
+   font-weight: var(--w500);
+   align-items: end;
+   /* bottom: 0; */
+   z-index: 9;
+   height: 100px;
+   width: calc(100%  - 12% );
+   /* position: absolute; */
+    /* padding-top: 178px;
+    padding-right: 28px;  */
 }
 .sub-01-03botton-home1{
     font-size:var(--text16);
@@ -1428,16 +1466,29 @@ body{
    
    
 }
+
 .coverbotton-home3{
     height: 0;
     width: 100%;
     overflow: hidden;
-    transition: 6s;
+    transition: 0.5s; /* ปรับเวลา transition ให้สมเหตุสมผล */
     color: var(--textwhite);
-   display: flex;
-   justify-content: center;
-   opacity: 0;
-   background-color: var(--bgwhite);
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    background-color: var(--bgwhite);
+    
+    /* เพิ่มส่วนนี้: เพื่อให้เนื้อหาภายในยืดตามความสูงจริงที่เหลืออยู่ */
+    flex-direction: column;
+}
+.coverbotton-home3 > div {
+    display: flex; 
+    flex-direction: column; 
+    /* ใช้ dvh เพื่อหักลบแถบเบราว์เซอร์อัตโนมัติ */
+    height: 100dvh; 
+    /* เว้นระยะด้านล่างกันแถบเบราว์เซอร์บัง */
+    padding-bottom: env(safe-area-inset-bottom, 20px); 
+    justify-content: space-between;
 }
 .iconpage3{
     width: 35px; 
@@ -1478,7 +1529,7 @@ body{
     padding-left: 25px;
     padding-right: 25px;
     font-weight: bold;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     font-size: var(--text20); color: var(--textspecial);padding-bottom: 15px;
     text-align: center;
 }
@@ -1488,7 +1539,7 @@ body{
      padding-bottom: 15px;    
       color: var(--textmain);                          
      padding-right: 25px;
-     max-width: 305px;
+     /* max-width: 305px; */
 }
 .sub03_01cardpage3{
     padding-bottom: 4px ;
@@ -1504,7 +1555,7 @@ body{
     align-items: center;
     justify-content: center;
     padding: 0 42px;
-    height: calc(100vh - 100px  );
+    height: calc(90vh - 100px  );
     position: relative;
     z-index: 2;
 }
@@ -1550,7 +1601,7 @@ body{
 .text1_01page4{
     font-size: var(--text16);
     color: var(--textmain);
-    margin-bottom: 15vw;
+    margin-bottom: 120px;
 }
 .text1_02page4{
     color: var(--textspecial);
@@ -1627,15 +1678,18 @@ body{
 }
 .sub02_page6{
     height: 90px;
-    margin-bottom: 19px;
+    /* margin-bottom: 19px; */
     display: flex;
     justify-content: center;
 }
 .sub03_page5{
+    display: flex;
+    justify-content: center;
+margin-bottom: 20px;
     text-indent: 10px; 
     font-size: var(--text16);
     color: var(--textmain); 
-    padding: 0 25px 
+    /* padding: 0 25px  */
 }
 /* .sub04_page5{
     height: 20%;
@@ -1654,11 +1708,12 @@ body{
     text-align: center;
     display: flex;
     justify-content: center;
+    pointer-events: none;
 }
 .sub05text02_page5{
     font-size: var(--text16);
     color: var(--textmain); 
-    padding-bottom: 27px;
+    /* padding-bottom: 27px; */
 }
 .tuchtogonomg{
     font-size: var(--text16);
@@ -1684,6 +1739,7 @@ body{
 /* .sub02_page8{
     height: 20%;
     display: flex; 
+
     justify-content: center;
      align-items: end;
 } */
@@ -1707,7 +1763,7 @@ body{
     color: var(--textspecial); font-weight: bold; font-size: var(--text18);
  }
  .subfonsite02_f16{
-    color: var(--textspecial); font-weight: bold; font-size: var(--text16);
+    color: var(--textspecial); font-weight: bold; font-size: var(--text20);
  }
 .sub02_2_page5{
     display: flex; 
@@ -3192,7 +3248,7 @@ height: 45px;
 .csshome_stpe2{
     width: 100%; 
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 .csshome_stpe3{
     width: 114px;
@@ -3228,7 +3284,7 @@ height: 45px;
 }
 .covertinyhome_allimg{
     position: relative;
-    width: 100%; 
+    width: 90%; 
     height: 250px; 
     display: flex;
         justify-content: center;
@@ -4028,7 +4084,7 @@ height: 45px;
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 3vw;
+    bottom: 0;
     /* height: 8vh; */
     z-index: 5;
     width: calc(95% - 25px - 3vw);
@@ -4202,6 +4258,17 @@ height: 45px;
     object-fit: cover; 
     object-position: center;
     transform: scale(1.4);
+}
+.bottomfade{
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    height: 87px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: #11827C;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 1%, #FFFFFF 15.71%);
 }
 /* <!-- nice end --> */
 
@@ -6685,6 +6752,10 @@ height: 45px;
   .content_everypottheapslo{
     height: 43vh;
   }
+  .covericonbeurger{
+    width: 4vw; 
+    height: 4vw;
+  }
 
 }
 
@@ -6718,7 +6789,7 @@ height: 45px;
         background-color:rgb(167, 167, 20) !important;
       }
       .sub-01-01botton-home1 {
-        padding: 30px 6% 0 6%;
+        padding: 0 6% 0 6%;
         font-size: var(--text13);
       }
       .sub03_hd01cardpage3{
@@ -6794,7 +6865,7 @@ height: 45px;
         font-size: var(--text14);
       }
       .subfonsite02_f16{
-          font-size: var(--text14);
+          font-size: var(--text16);
       }
       .subfonsite01{
         font-size: var(--text14);
@@ -6895,6 +6966,10 @@ height: 45px;
        /* .covertop-home1{
         height: 0vh;
        } */
+       .covericonbeurger{
+        width: 10vw; 
+        height: 10vw;
+      }
       /* nice end  */
 
       /* eve start  */
@@ -7179,11 +7254,7 @@ height: 45px;
         width: 182px;
         height: 153px;
     }
-    .tusttogo1 {
-        padding-top: 153px;
-        padding-right: 54px;
-        font-size:var(--text14);
-    }
+ 
  
     /* .txtpagenomornal{
         background-color: #a74c95;
@@ -7207,6 +7278,18 @@ height: 45px;
     }
     /* .sub-01botton-home1_text01 {
         padding-left: 37px;
+    } */
+    .sub-02botton-home1_1 {
+        height: 45px;
+    }
+    .divhide{
+        height: 0px;
+    }
+    /* .btustartome2{
+        font-size: 10px;
+    } */
+    /* .tusttogo1{
+        font-size: ;
     } */
     /* nice end  */
 
@@ -7268,9 +7351,9 @@ height: 45px;
     /* .text2_03paragrap1page4 {
         bottom: 35px;
     } */
-    .boxbgcloud_home {
+    /* .boxbgcloud_home {
         height: 400px;
-    }
+    } */
     .sub02_page5 {
         height: 234px;
     }
@@ -7350,6 +7433,10 @@ height: 45px;
         width: 299px;
         height: 220px;
     }
+    .sub-02botton-home1_1 {
+        height: 28px;
+    }
+
     /* nice end  */
 
     /* eve start  */

@@ -7182,12 +7182,12 @@ margin-bottom: 10px;
     }
     .coverbtutuchtogo {
         height: 60px;
-        color: red;
+        /* color: red; */
   
     }
-    .tuchtogonomg {
+    /* .tuchtogonomg {
         color: red;
-    }
+    } */
     .subchp2p4_top1{
         background-position: top;
     }
@@ -7196,7 +7196,7 @@ margin-bottom: 10px;
     }
     .nextpage-pic{
         height: 60px;
-        color: red;
+        /* color: red; */
     }
 
     .subchp2p5_top1 {
@@ -7405,6 +7405,9 @@ margin-bottom: 10px;
     .subch3p4_mid{
 
         bottom: 120px;
+    }
+    .coverbtutuchtogo{
+        font-size: 14px;
     }
    
 

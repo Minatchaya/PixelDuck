@@ -2923,8 +2923,8 @@ height: 45px;
     transition: 4s;
   }
   .sizesun{
-    width: 65vw;
-    height: 65vw;
+    width: 40vw;
+    height: 40vw;
   }
   .subtop_p3_2{
     font-size: var(--text16);
@@ -7220,7 +7220,7 @@ margin-bottom: 10px;
         height: 430px;
        }
        .subtop_p3_1 {
-        top: -52px;
+        top: -10px;
         transform: scale(0.5);
        }
        .subch3p4_top{
@@ -7415,6 +7415,9 @@ margin-bottom: 10px;
     }
     .coverbtutuchtogo{
         font-size: 14px;
+    }
+    .fadetxt-chap1page5-1{
+        padding-top: unset;
     }
    
 

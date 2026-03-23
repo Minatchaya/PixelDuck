@@ -5115,7 +5115,7 @@ height: 45px;
   
 }
 .chap1-page6-bgcontent{
-    width: 100%;
+    width: 90%;
     height: 350px;
     position: relative;
     background-image: url(./img/chapter1/page6/birdonflower.png);
@@ -5123,6 +5123,7 @@ height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
 }
 .chap1-page6-bird{
     width: 50%;

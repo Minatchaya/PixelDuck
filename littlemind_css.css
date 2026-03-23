@@ -5121,7 +5121,7 @@ height: 45px;
   
 }
 .chap1-page6-bgcontent{
-    width: 100%;
+    width: 90%;
     height: 350px;
     position: relative;
     background-image: url(./img/chapter1/page6/birdonflower.png);
@@ -5129,6 +5129,7 @@ height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
 }
 .chap1-page6-bird{
     width: 50%;
@@ -6764,7 +6765,7 @@ height: 45px;
     height: 4vw;
   }
   .chap1-page4-nest{
-    width: 90%;
+    width: 100%;
   }
   .fade-birdchap1page5 {
     top: 20px;
@@ -7252,12 +7253,6 @@ margin-bottom: 10px;
     }
 
 
-
-
-  
-
-
-
 }
 
 
@@ -7341,6 +7336,12 @@ margin-bottom: 10px;
     .subch3p4_mid{
 
         bottom: 120px;
+    }
+    .chap5-page1-txt3 {
+        bottom: 200px;
+    }
+    .chap5-page1-txt3 {
+        bottom: 130px;
     }
 
 

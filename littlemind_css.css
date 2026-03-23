@@ -7178,6 +7178,7 @@ margin-bottom: 10px;
     .coverdivcalepage_all {
         height: calc(100vh - 60px);
         justify-content: start;
+        padding-top: 50px;
     }
     .coverbtutuchtogo {
         height: 60px;

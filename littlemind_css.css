@@ -1582,6 +1582,7 @@ body{
 }
 .h-pic-prince{
     height: 370px;
+    position: relative;
 }
 .imgsub01top-home1{
     width: 75%; 
@@ -1989,7 +1990,7 @@ height: 45px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center ;
-   background-image: url(./img/homepage/shortstory04/Asset1.png);
+   background-image: url(./img/homepage/shortstory04/heart_2.png);
    margin-top: 10px;
 }
 .txtpagenomornal{
@@ -2095,9 +2096,10 @@ height: 45px;
 .coverch2page05{
     display: flex; 
     flex-direction: column; 
-    justify-content: end; 
+    justify-content: space-between; 
     align-items: center;
     height: 100vh;
+    padding-top: 50px;
 }
 .subchp2p5_top1{
     width: 100%; 
@@ -2364,7 +2366,8 @@ height: 45px;
     flex-direction: column; 
     width: 100%; 
     height: 100%; 
-    justify-content: center;
+    justify-content: start;
+    padding-top: 10px;
 }
 .subch3p4_top{
     height: 100px; 
@@ -2492,7 +2495,7 @@ height: 45px;
 }
 .coverch3page7{
     height: 100%;
-    justify-content: end;
+    justify-content: start;
     width: 100%;
     display: flex;
     align-items: center;
@@ -2502,7 +2505,7 @@ height: 45px;
 .subch3p7_top1{
     flex-direction: column;
     height: 10%;
-    justify-content: end;
+    justify-content: center;
     width: 100%;
     display: flex;
     align-items: center;
@@ -2534,12 +2537,13 @@ height: 45px;
     width: 100%;   
     justify-content: center;
     display: flex;
-    align-items: baseline;
+    align-items: end;
 }
 .subch3p7_bot1{
     font-size: var(--text16);  
     text-align: center;
      color: var(--textmain);
+     margin-top: 10px;
 }
 .subch3p7_bot2{
     font-size: var(--text16); color: var(--textmain); 
@@ -2894,10 +2898,11 @@ height: 45px;
     pointer-events: auto;
   }
   .covercallp3{
+    padding-top: 90px;
     display: flex;
     width: 100%;
     height: 100%;
-    justify-content: center; 
+    justify-content: start; 
     align-items: center;
     flex-direction: column;
   }
@@ -2914,7 +2919,7 @@ height: 45px;
     position: absolute;
     top: 11px;
     z-index: -1;
-    transform: scale(0.4) ;
+    transform: scale(0.6) ;
     transition: 4s;
   }
   .sizesun{
@@ -2927,6 +2932,7 @@ height: 45px;
   }
   .submid_p3{
     display: flex; width: 100%; 
+    margin-bottom: 30px;
     height: 340px; 
     background-size: contain;
     background-position: center;
@@ -3123,6 +3129,7 @@ height: 45px;
         from {
             transform: translateY(900px);
             opacity: 0;
+         
         }
         to {
             transform: translateY(0);
@@ -3378,11 +3385,16 @@ height: 45px;
      object-fit: contain;
 }
 .coverppch2p5{
-    width: 400px;
-    height: 370px;
+  
+    width: 100%;
     z-index: -1;
     position: absolute;
-    right: 18px;
+    right: 0;
+    bottom: -376px;
+}
+.boxtoadjust_ch2p5{
+  width: 400px;
+    height: 370px;
 }
 .subchp2p6_bottom2{
     position: absolute;
@@ -4068,7 +4080,8 @@ height: 45px;
     padding: 5px 0;
   }
   .covericonbeurger{
-    width: 10vw; height: 10vw;
+    width: 45px ;
+    height: 45px;
   }
   .coverexiticon{
     width: 100%; 
@@ -6761,8 +6774,8 @@ height: 45px;
     height: 43vh;
   }
   .covericonbeurger{
-    width: 4vw; 
-    height: 4vw;
+    width: 45px; 
+    height: 45px;
   }
   .chap1-page4-nest{
     width: 100%;
@@ -6776,7 +6789,13 @@ height: 45px;
   .csshome_stpe2{
 margin-bottom: 10px;
   }
-
+  .subchp2p5_top1{
+    padding-top: 40px;
+  }
+  .boxtoadjust_ch2p5{
+        width: 300px;
+        height: 300px;
+  }
 }
 
 @media (max-width: 393px){
@@ -6862,9 +6881,7 @@ margin-bottom: 10px;
       .sub02_page5{
         height: 350px;
       }
-      .sub02_page6{
-        margin-bottom: 5px;
-      }
+  
       .subQnA_page8{
         font-size: var(--text13);
       }
@@ -6898,7 +6915,7 @@ margin-bottom: 10px;
         height: 56%;
       }
       .shortstoy3_img{
-        height: 77%;
+        height: 60%;
       }
       /* .txtpagenomornal{
         background-color: #4DB2D6;
@@ -6973,6 +6990,7 @@ margin-bottom: 10px;
        }
        .sub02_page6 {
         height: 90px;
+        margin-bottom: 5px;
        }
        .covertinyhome_allimg {
         height: 136px;
@@ -6987,8 +7005,8 @@ margin-bottom: 10px;
         height: 0vh;
        } */
        .covericonbeurger{
-        width: 10vw; 
-        height: 10vw;
+        width: 40px; 
+        height: 40px;
       }
       .covertop-home1 {
         height: 44vh;
@@ -7000,6 +7018,16 @@ margin-bottom: 10px;
         height: 270px;
         object-fit: none;
       }
+      .csshome_stpe3{
+        left: 88px;
+      }
+      .csshome_stpe5{
+        left: 60px;
+      }
+      .boxtoadjust_ch2p5{
+        width: 250px;
+        height: 250px;
+  }
       /* nice end  */
 
       /* eve start  */
@@ -7150,7 +7178,6 @@ margin-bottom: 10px;
     .coverdivcalepage_all {
         height: calc(100vh - 60px);
         justify-content: start;
-        padding-top: 50px;
     }
     .coverbtutuchtogo {
         height: 60px;
@@ -7170,10 +7197,7 @@ margin-bottom: 10px;
         height: 60px;
         color: red;
     }
-    .coverch2page05{
-        justify-content: space-between; 
 
-    }
     .subchp2p5_top1 {
         margin-top: 50px;
     }
@@ -7182,9 +7206,9 @@ margin-bottom: 10px;
     }
     .coverppch2p5{
         position: absolute;
-        right: 5px;
-        left: -11px;
-
+        left: 0;
+        bottom: -519px;
+     
        }
        .subch2p7_mid1 {
       
@@ -7192,21 +7216,32 @@ margin-bottom: 10px;
        }
        .subtop_p3_1 {
         top: -52px;
+        transform: scale(0.5);
        }
        .subch3p4_top{
         height: unset;
        }
        .subch3p4_mid {
         position: absolute;
-        bottom: 105px;
+        bottom: 60px;
         width: 100%;
 
     }
-    .subch3p5_top{
-        height: 450px;
+    .coveradjust_set5{
+        height: 350px;
     }
     .subch3p5_top {
         align-items: end;
+        height: 400px;
+    }
+    .subch3p7_mid_bglow{
+        height: 350px;
+    }
+    .subch3p7_mid{
+        height: 350px;
+    }
+    .coverallcon_ch3p7{
+        height: 350px;
     }
     .coverch3page6 {
         justify-content: unset;
@@ -7251,8 +7286,23 @@ margin-bottom: 10px;
         height: 39%;
    
     }
-
-
+    .h-pic-prince{
+        height: 300px;
+        /* background: aquamarine; */
+    }
+    @keyframes slideupch2_p5 {
+        from {
+            transform: translateY(900px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(-499px);
+            opacity: 1;
+        }
+      }
+      .bgch3pg_foreast{
+        height: 400px;
+      }
 }
 
 
@@ -7315,6 +7365,20 @@ margin-bottom: 10px;
     /* .tusttogo1{
         font-size: ;
     } */
+    .sub02_page6 {
+        padding-top: 30px;
+    }
+    .coverppch2p5 {
+        position: absolute;
+        bottom: -513px;
+
+        left: 38px;
+    }
+    /* .h-pic-prince {
+        bottom: 0;
+        position: absolute;
+    } */
+
     /* nice end  */
 
     /* eve start  */
@@ -7389,7 +7453,6 @@ margin-bottom: 10px;
     }
     .sub02_page6 {
         height: 87px;
-
     }
     .coverinfoch2 {
         height: 175px;

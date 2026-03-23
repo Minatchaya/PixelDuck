@@ -6879,7 +6879,7 @@ margin-bottom: 10px;
         padding-bottom: 18px;
       }
       .sub02_page5{
-        height: 350px;
+        height: 340px;
       }
   
       .subQnA_page8{
@@ -6990,7 +6990,6 @@ margin-bottom: 10px;
        }
        .sub02_page6 {
         height: 90px;
-        margin-bottom: 5px;
        }
        .covertinyhome_allimg {
         height: 136px;
@@ -7001,9 +7000,7 @@ margin-bottom: 10px;
        .subshrtsory2_mid{
         height: 198px;
        }
-       /* .covertop-home1{
-        height: 0vh;
-       } */
+
        .covericonbeurger{
         width: 40px; 
         height: 40px;
@@ -7027,7 +7024,14 @@ margin-bottom: 10px;
       .boxtoadjust_ch2p5{
         width: 250px;
         height: 250px;
-  }
+     }
+     .subadjust_ch3p7_set2_sub1_1 {
+        width: 96px;
+        height: 99px;
+        left: -41px;
+        bottom: 12px;
+     }
+        
       /* nice end  */
 
       /* eve start  */
@@ -7327,7 +7331,7 @@ margin-bottom: 10px;
         background-color: rgb(114, 58, 148) !important;
       }
       .covertop-home1{
-        height: 50%;
+        height: 46%;
       }
    
       .coverlogostart_img {
@@ -7372,7 +7376,7 @@ margin-bottom: 10px;
         font-size: ;
     } */
     .sub02_page6 {
-        padding-top: 30px;
+        padding-top: 0;
     }
     .coverppch2p5 {
         position: absolute;
@@ -7383,6 +7387,9 @@ margin-bottom: 10px;
         bottom: 0;
         position: absolute;
     } */
+    .sub02_page5 {
+        height: 340px;
+    }
 
     /* nice end  */
 

@@ -6757,6 +6757,15 @@ height: 45px;
     width: 4vw; 
     height: 4vw;
   }
+  .chap1-page4-nest{
+    width: 90%;
+  }
+  .fade-birdchap1page5 {
+    top: 20px;
+  }
+  .chap1-page5-boxtxt1{
+    padding-top: 5px;
+  }
 
 }
 

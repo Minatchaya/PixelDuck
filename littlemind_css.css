@@ -179,8 +179,8 @@ body{
     font-weight: var(--w500);
     font-size: var(--text24);
     cursor: pointer;
-    /* background: linear-gradient(180deg, #E2E2E2 0%, #FEFEFE 100%); */
-    background-color: red;
+    background: linear-gradient(180deg, #E2E2E2 0%, #FEFEFE 100%);
+    /* background-color: red; */
     /* ตั้งค่าเริ่มต้นให้หายไปก่อน */
     opacity: 0; 
     
@@ -2007,7 +2007,7 @@ height: 45px;
     font-size: var(--text16);
     text-align: center;
     align-items: center;
-   margin-top: 20px;
+   /* margin-top: 20px; */
 }
 .txtuseabsolite{
     position: absolute;
@@ -6764,9 +6764,9 @@ height: 45px;
     justify-content: center;
     background-color: var(--bgiconP3);
   }
-  .btustartome{
+  /* .btustartome{
     background-color: red !important;
-  }
+  } */
   /* .txtpagenomornal{
     background-color: #4CA76D;
   } */
@@ -6825,7 +6825,7 @@ margin-bottom: 10px;
       .btustartome{
         height: 40px;
         font-size: var(--text16);
-        background-color:rgb(167, 167, 20) !important;
+        /* background-color:rgb(167, 167, 20) !important; */
       }
       .sub-01-01botton-home1 {
         padding: 0 6% 0 6%;
@@ -7328,7 +7328,7 @@ margin-bottom: 10px;
       } */
       .btustartome {
         width: 29%;
-        background-color: rgb(114, 58, 148) !important;
+        /* background-color: rgb(114, 58, 148) !important; */
       }
       .covertop-home1{
         height: 46%;
@@ -7431,9 +7431,9 @@ margin-bottom: 10px;
     /* .sub-02botton-home1{
         background-color: #1789da;
       } */
-      .btustartome{
+      /* .btustartome{
         background-color:lightslategrey !important;
-      }
+      } */
       /* .covertop-home1{
         height: 50%;
       } */

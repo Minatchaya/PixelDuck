@@ -4281,13 +4281,12 @@ height: 45px;
 }
 .bottomfade{
     width: fit-content;
-    position: absolute;
+    position: sticky;
     bottom: 0;
     height: 87px;
     display: flex;
     justify-content: center;
     align-items: end;
-    background-color: #11827C;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 1%, #FFFFFF 15.71%);
 }
 /* <!-- nice end --> */

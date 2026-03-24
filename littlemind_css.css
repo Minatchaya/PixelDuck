@@ -4077,9 +4077,9 @@ height: 45px;
     background-image: url(./img/homepage/page1/Team_Tab.png);
   }
   
-  .submenuM div {
+  /* .submenuM div {
     padding: 5px 0;
-  }
+  } */
   .covericonbeurger{
     width: 45px ;
     height: 45px;
@@ -4245,16 +4245,15 @@ height: 45px;
 }
 .divpplfream_adv {
     /* 1. ใช้เลขเดียวกันเพื่อให้เป็นจัตุรัสก่อนทำเป็นวงกลม */
-    width: 19vw;
-    height: 11vw;
-    min-width: 41px;/* ป้องกันรูปเล็กเกินไปจนมองหน้าคนไม่ชัดในมือถือ */
-    max-width: 100px;  /* ป้องกันรูปใหญ่เกินไปในจอ Desktop ความละเอียดสูง */
+    width: 80px;
+    height: 60px;
+
 
     /* 3. ส่วนเสริมที่ต้องมีเพื่อให้เป็นวงกลมเป๊ะ */
     border: 1.5px solid #95d2ed;
     border-radius: 100px;
     overflow: hidden;
-    
+    /* background-image: url(img/homepage/page1/Artboard7.jpg); */
     /* จัดกลาง */
     display: flex;
     justify-content: center;

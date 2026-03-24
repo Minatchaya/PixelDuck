@@ -4022,11 +4022,10 @@ height: 45px;
     position: fixed;
     top: 0;
     left: -1200px;
-    width: calc(70% - 25px);
+    width: 80%;
     height: 100%;
     background: white;
     transition: 0.3s;
-    padding: 0 25px;
     z-index: 1002;
     background-repeat: no-repeat;
     background-size: contain;
@@ -4065,7 +4064,6 @@ height: 45px;
   .submenuM {
     display: none;
     padding: 8px;
-    /* background: #e9f6fb; */
     border-radius: 10px;
     margin-top: 5px;
 
@@ -4164,19 +4162,7 @@ height: 45px;
     font-size: 3.5vw;
   }
 /* สร้างคลาสสำหรับทำ Mask โดยเฉพาะ */
-.fade-mask {
-    /* ไล่จากสีดำทึบ (เห็นชัด) ไปเป็นโปร่งใส (Fade) */
-    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
-    
-    -webkit-mask-size: 100% 100%;
-    mask-size: 100% 100%;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
 
-    /* ปรับระยะห่างด้านล่างเพื่อให้เห็นเอฟเฟกต์ฟุ้งๆ ชัดขึ้น */
-    padding-bottom: 25px; 
-}
 /* แผ่นใสฟุ้งๆ บังด้านล่าง */
 .bottom-fade-shield {
     position: absolute;
@@ -4252,7 +4238,7 @@ height: 45px;
     display: flex;
     width: 100%;
     flex-direction: column;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .divpplfream_adv {
     /* 1. ใช้เลขเดียวกันเพื่อให้เป็นจัตุรัสก่อนทำเป็นวงกลม */
@@ -4263,7 +4249,7 @@ height: 45px;
 
     /* 3. ส่วนเสริมที่ต้องมีเพื่อให้เป็นวงกลมเป๊ะ */
     border: 1.5px solid #95d2ed;
-    border-radius: 50%;
+    border-radius: 100px;
     overflow: hidden;
     
     /* จัดกลาง */
@@ -4277,6 +4263,46 @@ height: 45px;
     /* สำคัญ: เพื่อให้รูปหน้าคนไม่เบี้ยวตอนย่อขยาย */
     object-fit: cover; 
     object-position: center;
+    transform: scale(1.4);
+}
+.sizeimgppl_adv1 {
+    width: 100%;
+    height: 100%;
+    /* สำคัญ: เพื่อให้รูปหน้าคนไม่เบี้ยวตอนย่อขยาย */
+    object-fit: cover; 
+    object-position: -2px -4px;
+    transform: scale(1.4);
+}
+.sizeimgppl_adv2 {
+    width: 100%;
+    height: 100%;
+    /* สำคัญ: เพื่อให้รูปหน้าคนไม่เบี้ยวตอนย่อขยาย */
+    object-fit: cover; 
+    object-position: -3px -4px;
+    transform: scale(1.4);
+}
+.sizeimgppl_adv3 {
+    width: 100%;
+    height: 100%;
+    /* สำคัญ: เพื่อให้รูปหน้าคนไม่เบี้ยวตอนย่อขยาย */
+    object-fit: cover; 
+    object-position:-2px -5px;
+    transform: scale(1.4);
+}
+.sizeimgppl_adv4 {
+    width: 100%;
+    height: 100%;
+    /* สำคัญ: เพื่อให้รูปหน้าคนไม่เบี้ยวตอนย่อขยาย */
+    object-fit: cover; 
+    object-position:1px -4px;
+    transform: scale(1.4);
+}
+.sizeimgppl_adv21 {
+    width: 100%;
+    height: 100%;
+    /* สำคัญ: เพื่อให้รูปหน้าคนไม่เบี้ยวตอนย่อขยาย */
+    object-fit: cover; 
+    object-position:1px 0;
     transform: scale(1.4);
 }
 .bottomfade{

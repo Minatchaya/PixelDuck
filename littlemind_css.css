@@ -4069,7 +4069,7 @@ height: 45px;
     padding: 8px;
     border-radius: 10px;
     margin-top: 5px;
-
+    gap: 20px;
   }
   .submenuM.active{
     background-repeat: no-repeat;
@@ -4201,12 +4201,8 @@ height: 45px;
 }
 .divpplfream {
     /* 1. ใช้เลขเดียวกันเพื่อให้เป็นจัตุรัสก่อนทำเป็นวงกลม */
-    width: 15vw; 
-    height: 12vw; 
-
-    /* 2. ค่า Min-Max เพื่อไม่ให้รูป "จิ๋ว" ในมือถือ หรือ "ยักษ์" ในจอคอม */
-    min-width: 57px; /* ป้องกันรูปเล็กเกินไปจนมองหน้าคนไม่ชัดในมือถือ */
-    max-width: 100px;  /* ป้องกันรูปใหญ่เกินไปในจอ Desktop ความละเอียดสูง */
+    width: 50px; 
+    height: 50px; 
 
     /* 3. ส่วนเสริมที่ต้องมีเพื่อให้เป็นวงกลมเป๊ะ */
     border: 1.5px solid #95d2ed;
@@ -4239,21 +4235,23 @@ height: 45px;
 }
 .textadv{
     display: flex;
-    width: 100%;
+    width: calc(100% - 50px - 10px);
     flex-direction: column;
     margin-left: 10px;
 }
 .divpplfream_adv {
     /* 1. ใช้เลขเดียวกันเพื่อให้เป็นจัตุรัสก่อนทำเป็นวงกลม */
-    width: 80px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 
 
     /* 3. ส่วนเสริมที่ต้องมีเพื่อให้เป็นวงกลมเป๊ะ */
     border: 1.5px solid #95d2ed;
     border-radius: 100px;
     overflow: hidden;
-    /* background-image: url(img/homepage/page1/Artboard7.jpg); */
+    /* background-image: url(img/homepage/page1/Artboard7.jpg);
+    background-position: center;
+    background-size: cover; */
     /* จัดกลาง */
     display: flex;
     justify-content: center;

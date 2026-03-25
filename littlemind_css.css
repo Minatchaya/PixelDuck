@@ -4837,7 +4837,7 @@ height: 45px;
     padding: 0 15px;
 }
 .sumquiz{
-    font-size: var(--text30);
+    font-size: var(--text36);
 }
 .page13-sizepic{
     width: 250px;
@@ -6944,12 +6944,12 @@ margin-bottom: 10px;
       .txtpagenomornal{
         font-size: var(--text14);
       }
-      .subfonsite02_f16{
+      /* .subfonsite02_f16{
           font-size: var(--text16);
-      }
-      .subfonsite01{
+      } */
+      /* .subfonsite01{
         font-size: var(--text14);
-      }
+      } */
       .page11-page-parthome{
         justify-content: center;
       }

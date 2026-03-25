@@ -7102,7 +7102,7 @@ margin-bottom: 10px;
         height: 32vw;
     }
     .birdchap1page5{
-        width: 85%;
+        width: 80%;
     }
     .chap1-page5-sizebird1 {
         width: 80%;
@@ -7355,6 +7355,10 @@ margin-bottom: 10px;
       }
     .chap5-page1-txt3 {
         bottom: 130px;
+    }
+    .coverch4p6_bot{
+        margin-bottom: unset;
+        margin-top: 30px;
     }
 
 

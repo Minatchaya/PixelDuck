@@ -6702,38 +6702,39 @@ height: 45px;
     margin-top: 20px;
      margin-bottom: 30px;
   }
-  .result2-cloud-l{
+  .result2-cloud-l {
     position: absolute;
-    right: 192px;
-    width: 55%;
-    bottom: 10px;
+    right: 212px;
+    width: 46%;
+    bottom: 27px;
     z-index: 1;
-  }
+}
   .result2-cloud-r{
     position: absolute;
-    right: 0;
-    width: 46%;
-    bottom: 18px;
+    right: 2px;
+    width: 53%;
+    bottom: 20px;
     z-index: 1;
   }
   .result3-cloud{
     position: absolute;
     width: 100%;
-    bottom: 75px;
+    bottom: 100px;
     z-index: 1;
     height: 47%;
+
   }
   .result4-cloud{
     position: absolute;
     width: 100%;
-    bottom: 13px;
+    bottom: 27px;
     z-index: 2;
     height: 47%;
   }
   .result5-cloud {
     position: absolute;
     width: 100%;
-    bottom: 8px;
+    bottom: 27px;
     z-index: 2;
     height: 47%;
 }

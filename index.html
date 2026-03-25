@@ -2780,7 +2780,7 @@
 
     <div class="overlay overlayto_all-result overlay-slidedown_overlayto_all-result" >
         
-        <div id="result1"  style=" overflow: scroll; height: 100%; ">
+        <div id="result1"  style=" display: none; overflow: scroll; height: 100%; ">
             <div class="fade-step-result bg-result" >
              <div class="fade-step-result faderesult-1500 result-txt1" >
                  <span class="result-txt2">หัวใจของอัศวินน้อยกล้าหาญมาก</span> <br>
@@ -3707,44 +3707,3 @@ function openstarthome() {
  
 <!-- nice end  -->
 
-<!-- <script>
-    let totalScore = 0;
-    
-    // map overlay → active class
-    const pageActiveMap = {
-      'overlayto_chap1-2': 'active-1',
-      'overlayto_chap2-2': 'active-2',
-      'overlayto_chap3-2': 'active-3',
-      'overlayto_chap4-2': 'active-4',
-      'overlayto_chap5-3': 'active-5'
-    };
-    
-    // click ปุ่มคำตอบ
-    $(document).on('click', '.btn-condition', function () {
-    
-      const value = $(this).attr('value');
-    
-      // ⭐ หา overlay ที่เปิดอยู่จริง
-      const $overlay = $(this).closest('.overlay');
-    
-      // เก็บคะแนน
-      if (value === 'true') {
-        totalScore += 1;
-      }
-    
-      // 🔄 reset สีเฉพาะปุ่มในชุดเดียวกัน
-      const $group = $(this).closest('.bg-btn-condition');
-      $group.find('.btn-condition')
-        .removeClass('active-1 active-2 active-3 active-4 active-5');
-    
-      // 🎯 ใส่ active ให้ถูกตาม overlay
-      Object.keys(pageActiveMap).forEach(key => {
-        if ($overlay.hasClass(key)) {
-          $(this).addClass(pageActiveMap[key]);
-        }
-      });
-    
-      console.log('คะแนนรวม:', totalScore);
-    });
-    </script>
-     -->

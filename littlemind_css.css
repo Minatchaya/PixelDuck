@@ -2385,7 +2385,7 @@ height: 45px;
     justify-content: center;
     display: flex;
     align-items: end;
-    font-size: var(--text16);
+    font-size: var(--text20);
     color: var(--textdarkgreen);
     font-weight: bold;
 }
@@ -2396,7 +2396,7 @@ height: 45px;
   position: relative;
 }
 .subch3p4_bot{
-    font-size: var(--text18);
+    font-size: var(--text24);
     color: var(--textdarkgreen);
     font-weight: bold;
 }
@@ -7268,7 +7268,7 @@ margin-bottom: 10px;
        }
        .subch3p4_mid {
         position: absolute;
-        bottom: 60px;
+        bottom: 150px;
         width: 100%;
 
     }

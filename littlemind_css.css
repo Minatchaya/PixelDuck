@@ -1772,7 +1772,7 @@ margin-bottom: 20px;
     color: var(--textspecial); font-weight: bold; font-size: var(--text18);
  }
  .subfonsite02_f16{
-    color: var(--textspecial); font-weight: bold; font-size: var(--text20);
+    color: var(--textspecial);
  }
 .sub02_2_page5{
     display: flex; 
@@ -6932,7 +6932,7 @@ margin-bottom: 10px;
         font-size: var(--text13);
       }
       .txtuseabsolite{
-        font-size: var(--text16);
+        font-size: var(--text16) ;
       }
       .subfonsite00{
         font-size: var(--text16);

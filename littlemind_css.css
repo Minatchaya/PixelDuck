@@ -7037,7 +7037,7 @@ margin-bottom: 10px;
         height: 136px;
        }
        .sub_shortstoy1_img_1 {
-        height: 223px;
+        height: 190px;
        }
        .subshrtsory2_mid{
         height: 198px;
@@ -7055,7 +7055,10 @@ margin-bottom: 10px;
       }
       .csshome_stpe2{
         height: 270px;
-        object-fit: none;
+        object-fit: contain;
+        position: absolute;
+        top: -33px;
+        z-index: 0;
       }
       .csshome_stpe3{
         left: 88px;

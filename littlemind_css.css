@@ -154,8 +154,6 @@ body{
     height: 20px;
 }
 
-/* <!-- nice start --> */
-
 .btustartome:active{
     background: linear-gradient(180deg, #C6E6F7 0%, #FEFEFE 100%);
 }
@@ -4329,9 +4327,7 @@ height: 45px;
     align-items: end;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 1%, #FFFFFF 15.71%);
 }
-/* <!-- nice end --> */
 
- /* eve start */
  .overlayto_testquiz {
     position: fixed;
     width: 100%;
@@ -6843,8 +6839,7 @@ margin-bottom: 10px;
 }
 
 @media (max-width: 393px){
-      /* nice start  */
-  
+
        /* .sub-02botton-home1{
   
         background-color: #D37FA1;
@@ -7078,10 +7073,6 @@ margin-bottom: 10px;
         left: -41px;
         bottom: 12px;
      }
-        
-      /* nice end  */
-
-      /* eve start  */
     
       .chap1-page4-bird1 {
         /* height: 135px; */
@@ -7367,13 +7358,8 @@ margin-bottom: 10px;
 }
 
 
-
-
-       /* eve end  */
-
 @media (max-width: 375px){
    
-    /* nice start  */
     /* .sub-02botton-home1{
         background-color: green;
       } */
@@ -7441,10 +7427,6 @@ margin-bottom: 10px;
     .sub02_page5 {
         height: 340px;
     }
-
-    /* nice end  */
-
-    /* eve start  */
     .page13-txthead{
         font-size: var(--text24);
       }
@@ -7472,13 +7454,10 @@ margin-bottom: 10px;
     }
    
 
-
-
-    /* eve end  */
 }
 
 @media (max-width: 320px){
-    /* nice start  */
+
     /* .sub-02botton-home1{
         background-color: #1789da;
       } */
@@ -7594,11 +7573,3 @@ margin-bottom: 10px;
     .sub-02botton-home1_1 {
         height: 28px;
     }
-
-    /* nice end  */
-
-    /* eve start  */
-
-
-    /* eve end  */
-}

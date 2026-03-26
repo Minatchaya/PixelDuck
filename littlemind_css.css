@@ -6706,22 +6706,22 @@ height: 45px;
     position: absolute;
     right: 212px;
     width: 46%;
-    bottom: 27px;
+    bottom: 26px;
     z-index: 1;
 }
   .result2-cloud-r{
     position: absolute;
-    right: 2px;
+    right: 0px;
     width: 53%;
-    bottom: 20px;
+    bottom: 19px;
     z-index: 1;
   }
   .result3-cloud{
     position: absolute;
     width: 100%;
-    bottom: 100px;
+    bottom: 45px;
     z-index: 1;
-    height: 47%;
+    /* height: 47%; */
 
   }
   .result4-cloud{
@@ -6729,7 +6729,7 @@ height: 45px;
     width: 100%;
     bottom: 27px;
     z-index: 2;
-    height: 47%;
+    /* height: 100%; */
   }
   .result5-cloud {
     position: absolute;
